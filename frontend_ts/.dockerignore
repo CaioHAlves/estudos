@@ -1,0 +1,7 @@
+.git
+.idea
+node_modules
+src/__test__
+build
+npm-debug.log*
+npm-error.log*

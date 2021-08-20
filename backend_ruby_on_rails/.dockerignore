@@ -1,0 +1,7 @@
+tmp/*
+log/*
+.git
+.byebug_history
+
+# Dont copy the docker ignore to the VD. Makes no sense
+.dockerignore

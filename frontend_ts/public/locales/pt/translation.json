@@ -1,0 +1,11 @@
+{
+  "login": {
+    "nome": "Nome",
+    "senha": "Senha",
+    "entrar": "Entrar"
+  },
+  "home": {
+    "title": "Inicio",
+    "subtitle": "Página inicial"
+  }
+}

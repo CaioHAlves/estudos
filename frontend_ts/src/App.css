@@ -1,0 +1,27 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #ececec;
+  height: 100vh;
+}
+
+.Content > * {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+@media (max-height: 600px) {
+  .App {
+    display: flex;
+    height: 100%;
+    overflow-y: overlay;
+  }
+}
