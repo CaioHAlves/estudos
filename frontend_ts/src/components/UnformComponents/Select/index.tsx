@@ -5,9 +5,8 @@ import ReactSelect, {
   Props as SelectProps,
 } from 'react-select'
 import { useField } from '@unform/core'
-import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline';
-import './SelectUnique.scss'
-import { Typography } from '@material-ui/core';
+import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline'
+import { Typography } from '@material-ui/core'
 
 interface Props extends SelectProps<OptionTypeBase, true> {
   name: string;
