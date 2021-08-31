@@ -9,7 +9,7 @@ import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline';
 import './SelectUnique.scss'
 import { Typography } from '@material-ui/core';
 
-interface Props extends SelectProps<OptionTypeBase> {
+interface Props extends SelectProps<OptionTypeBase, true> {
   name: string;
 }
 

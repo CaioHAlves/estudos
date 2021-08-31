@@ -26,7 +26,6 @@ export function Home() {
       />
       <Form onSubmit={handleSubmit} ref={formRef} initialData={{ techs: 1 }}>
         <Select
-          isMulti
           name="techs"
           options={options}
         />
