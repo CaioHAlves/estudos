@@ -56,7 +56,7 @@ export function Select({ name, options, hasIcon, icon, ...rest }: Props) {
   }, [fieldName, registerField, rest.isMulti])
 
   return (
-    <div>
+    <div className="Input-Select-Container">
       <ReactSelect
         ref={selectRef}
         defaultValue={
@@ -67,12 +67,13 @@ export function Select({ name, options, hasIcon, icon, ...rest }: Props) {
         hasIcon={hasIcon}
         icon={icon}
         classNamePrefix="react-select"
+        className="Input-Select"
         {...rest}
       />
       {error &&
-        <div>
-          <ErrorOutlineIcon />
-          <Typography>{error}</Typography>
+        <div className="Input-Select-Divisao-Erros">
+          <ErrorOutlineIcon className="Icone-Input-Error" />
+          <Typography className="Input-Select-Error">{error}</Typography>
         </div>
       }
     </div>
