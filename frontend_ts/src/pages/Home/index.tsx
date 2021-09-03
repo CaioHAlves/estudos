@@ -2,6 +2,7 @@ import React from 'react';
 import { PageTitle, Select, CodeInput } from '../../components';
 import { useTranslation } from "react-i18next";
 import { Form } from "@unform/web";
+import Radio from '../../components/UnformComponents/Radios';
 
 export function Home() {
 
@@ -18,6 +19,11 @@ export function Home() {
     { label: 'Teste2', value: 'teste2' },
   ]
 
+  const radioOptions = [
+    { id: 'jpedroschmitz', value: 'jpedroschmitz', label: 'jpedroschmitz' },
+    { id: 'rocketseat', value: 'rocketseat', label: 'Rocketseat' },
+  ]
+
   return (
     <div>
       <PageTitle
@@ -32,6 +38,8 @@ export function Home() {
         <CodeInput
           name="campo-cod"
         />
+        <Radio name="username" label="Choose a username" options={radioOptions} />
+
         <button type="submit">Enviar</button>
       </Form>
     </div>

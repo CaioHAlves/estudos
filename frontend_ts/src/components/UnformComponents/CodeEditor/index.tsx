@@ -13,7 +13,7 @@ export function CodeInput({ name }: Props) {
   const [code, setCode] = useState('')
   const editorRef = useRef(null)
 
-  const { defaultValue, fieldName, registerField, error } = useField(name)
+  const { defaultValue, fieldName, registerField } = useField(name)
 
   useEffect(() => {
     registerField({
