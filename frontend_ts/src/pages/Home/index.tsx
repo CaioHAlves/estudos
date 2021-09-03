@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageTitle, Select } from '../../components';
+import { PageTitle, Select, CodeInput } from '../../components';
 import { useTranslation } from "react-i18next";
 import { Form } from "@unform/web";
 
@@ -28,6 +28,9 @@ export function Home() {
         <Select
           name="techs"
           options={options}
+        />
+        <CodeInput
+          name="campo-cod"
         />
         <button type="submit">Enviar</button>
       </Form>
